@@ -1,0 +1,27 @@
+{
+  "name": "pika-web-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm run prepare",
+    "start": "live-server",
+    "prepare": "pika-web"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@pika/web": "^0.2.0",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "es-module-shims": "^0.2.1",
+    "lit-element": "^2.0.1"
+  },
+  "@pika/web": {
+    "webDependencies": [
+      "lit-element"
+    ]
+  }
+}
